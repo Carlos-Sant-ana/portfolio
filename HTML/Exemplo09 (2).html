@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <title> JavaScript </title>
+ <meta charset="UTF-8">
+ <script>
+ function verificar() {
+ var nome=frm_cadastro.txt_nome.value;
+ var celular=frm_cadastro.txt_celular.value;
+ if (nome=="") {
+ alert("Campo nome vazio, favor preencher");
+ return false; }
+ if (nome.length<3) {
+ alert("Favor completar o campo nome ");
+ return false;
+ }
+ if (celular=="") {
+alert("Campo celular  vazio, favor preencher");
+ return false; }
+ if (celular.length<9) {
+ alert("Favor completar o campo celular ");
+ return false;
+ }
+  return true;
+ }
+ 
+ </script>
+ </head>
+ <body>
+ <h1> Formulário de Cadastro </h1>
+ <form name=frm_cadastro action="" method="POST">
+ <label for=txt_nome> Nome: </label>
+ <input type="text" name="txt_nome" size=40> <br><br>
+ <label for=txt_nome> Telefone: </label>
+ <input type="text" name="txt_celular" size=9> <br><br>
+ <input type="submit" value="Enviar" onclick="verificar()">
+ </form>
+ </body>
+</html>

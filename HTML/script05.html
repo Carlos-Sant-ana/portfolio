@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> Auto Escola </title>
+		
+		<script>
+			function verificar(){
+			var idade=parseInt(frmautoescola.txtidade.value);
+			if(idade<18)
+				{
+				alert("Aguarde a idade minima exigida!");
+				return false;
+				}
+			return true;
+								}
+		</script>
+		
+	</head>
+	
+	<body>
+	<form name=frmautoescola method="POST" action="#">
+	<fieldset>
+	<legend> Dados Cadastrais </legend>
+	<br><br>
+	<label> Nome: </label>
+	<input type="text" name=txtnome size=40 maxlength=40>
+	<br><br>
+	<label> Idade: </label>
+	<input type="number" name=txtidade size=5>
+	<br><br>
+	<label> E-mail: </label>
+	<input type="email" name=txtemail size=50 maxlength=50>
+	<br><br>
+	<label> Telefone </label>
+	<input type="text" name=txtnome size=16 maxlength=16>
+	<br><br>
+	<input type="submit" value="Enviar" onclick="return verificar()">
+	<input type="reset" value="Limpar">
+	</form>
+	</body>
+	
+
+</html>

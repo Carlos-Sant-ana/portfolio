@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <title> JavaScript </title>
+ <meta charset="UTF-8">
+ <script>
+ function DataHora(){
+ var data = new Date();
+ horas = data.getHours();
+ var nome=prompt("Qual é o seu nome ","");
+ 
+ if((horas >= 7) && (horas <=12))
+	document.write("Bom dia, " + nome);
+ if((horas >= 13) && (horas <=17))
+	document.write("Boa tarde, " + nome);
+ if((horas >= 18) && (horas <=23))
+	document.write("Boa Noite, " + nome);
+ else
+	document.write("Boa Madrugada, " + nome);
+ 
+ }
+ </script>
+ </head>
+ <body onload="DataHora()">
+ </body>
+ </html>
+ 
+ 

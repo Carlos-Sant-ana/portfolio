@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> Cadastro de Alunos </title>
+<script>
+function ativa()
+{
+var nota1 = parseFloat(notas.nota1.value);
+var nota2 = parseFloat(notas.nota2.value);
+var media;
+media = ((nota1+nota2)/2);
+
+if (media >= 7)
+	alert("Aprovado");
+else
+	alert("Reprovado");
+
+}
+</script>
+
+</head>
+<body>
+<form name=notas action="#" method="post">
+<fieldset>
+<legend>Dados Cadastrais</legend>
+<br>
+<label> Nota 1 </label>
+<input type="number" name=nota1 maxlength=2>
+<br>
+<label> Nota 2 </label>
+<input type="number" name=nota2 maxlength=2>
+
+<input type="button" value="Enviar" onclick="ativa()">
+</fieldset>
+</form>
+</body>
+
+<br>
+
+</html>

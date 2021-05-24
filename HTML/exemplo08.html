@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+ <title> JavaScript </title>
+ <meta charset="UTF-8">
+ <script>
+ function media()
+ {
+  var nota1=0,nota2=0,media=0, nota3=0;
+  nota1=parseFloat(form1.nota1.value);
+  nota2=parseFloat(form1.nota2.value);
+  nota3=parseFloat(form1.nota3.value);
+  media=(nota1+nota2+nota3)/3;
+  form1.total.value=media.toFixed(3);
+ }
+ </script>
+ </head>
+ <body>
+ <h1> Formulário de Notas </h1>
+ <br>
+ <form name="form1" method="post" action="">
+ <label> Nota1: </label>
+ <input type="number" name="nota1" onchange="media()"> <br><br>
+<label> Nota2: </label>
+<input type="number" name="nota2" onchange="media()"> <br><br>
+<label> Nota3: </label>
+<input type="number" name="nota3" onchange="media()"> <br><br>
+<br>
+<label> Média: </label>
+<input type="number" name="total" size=04 readonly=true>
+<br><br>
+<input type="button" Value="Calcular Média" onclick="media()">
+ </form>
+ </body>
+</html>

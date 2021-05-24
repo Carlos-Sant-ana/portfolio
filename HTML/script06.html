@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title> Auto Escola </title>
+		
+		<script>
+			function verificar(){
+			var renda=parseInt(frmarenda.txtrenda.value);
+			var agua=parseInt(frmarenda.txtagua.value);
+			var luz=parseInt(frmarenda.txtluz.value);
+			var mercado=parseInt(frmarenda.txtmercado.value);
+			var cartao=parseInt(frmarenda.txtcartao.value);
+			var controle;
+			controle=agua+luz+mercado+cartao;
+			if (renda >= controle)
+				alert("Com saldo");
+			else
+					alert("Sem saldo");
+								}
+		</script>
+		
+	</head>
+	<form name=frmarenda method="POST" action="#">
+	<body>
+	<label> Renda mensal: </label>
+	<input type="number" name=txtrenda size=20>
+	<br><br>
+	<label> Agua: </label>
+	<input type="number" name=txtagua size=20>
+	<br><br>
+	<label> Luz: </label>
+	<input type="number" name=txtluz size=20>
+	<br><br>
+	<label> Mercado: </label>
+	<input type="number" name=txtmercado size=20>
+	<br><br>
+	<label> Cartão de Credito: </label>
+	<input type="number" name=txtcartao size=20>
+	<br><br>
+	<input type="submit" value="Enviar" onclick="return verificar()">
+	<input type="reset" value="Limpar">
+	</form>
+
+	</body>
+	
+
+</html>

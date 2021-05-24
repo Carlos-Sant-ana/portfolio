@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title >Sistemas de informação </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel ="shortcut icon" type = "imagem/x-icon" href = "img/icone.jpg"/>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sistemas de Informação</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="#"><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Professores</a></li>
+			<li class="#"><a href="#">Grade Curricular</a></li>
+			<li class="#"><a href="#">Area de Atuação</a></li>
+			<li><a href="http://www.fafram.com.br/">Retornar</a></li>
+		<li><a data-toggle="modal" data-target="#myModal" href="#myModal"><span class="glyphicon glyphicon-envelope"></span> Contato</a></li>
+		 </ul>
+	</div>
+</div>
+</nav>
+<br>
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h4>Professores</h4>
+          <p>Quem São:</p>
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  <div class="container my-5">
+    <div class="row centered">
+      <br><br>
+      <div class="col-lg-3">
+        <img class="img-circle" src="img/pic.jpg" width="110" height="110" alt="">
+        <h4>Rogerio</h4>
+        <p>Professor de programação WEB.</p>
+        <p><a href="#">@Rogeiro_FAFRAM</a></p>
+      </div>
+      <!-- col-lg-3 -->
+
+      <div class="col-lg-3">
+        <img class="img-circle" src="img/pic2.jpg" width="110" height="110" alt="">
+        <h4>Rondado</h4>
+        <p>Professor de programação Grafica e Multimidia.</p>
+        <p><a href="#">@Rondado_FAFRAM</a></p>
+      </div>
+      <!-- col-lg-3 -->
+
+      <div class="col-lg-3">
+        <img class="img-circle" src="img/pic3.jpg" width="110" height="110" alt="">
+        <h4>Carlos Ito</h4>
+        <p>Professor de Sistemas de Apoio a decisão.</p>
+        <p><a href="#">@Carlos_FAFRAM</a></p>
+      </div>
+      <!-- col-lg-3 -->
+
+      <div class="col-lg-3">
+        <img class="img-circle" src="img/pic4.jpg" width="110" height="110" alt="">
+        <h4>Levada</h4>
+        <p>Professor de REDES.</p>
+        <p><a href="#">@Levada_FAFRAM</a></p>
+      </div>
+      <!-- col-lg-3 -->
+
+    </div>
+    <!-- row -->
+    <br>
+    <br>
+  </div>
+  <!-- container --> 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Contato</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row centered">
+            <p> Fundação Educacional de Ituverava, não estie em entrar em contato com a gente</p>
+            <p>
+              Rua Cel. Flauzino Barbosa Sandoval, 1259<br/> Ituverava-SP.<br/> (16) 3729-9000<br/> contact@example.com
+            </p>
+
+            <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+              <div class="form-group">
+                <label for="contact-name">Seu Nome</label>
+                <input type="name" name="name" class="form-control" id="contact-name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Seu Imail</label>
+                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Seu Imail" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Assunto</label>
+                <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Assunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                <div class="validate"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Sua Mensagem</label>
+                <textarea class="form-control" name="message" id="contact-message" placeholder="Sua Mensagem" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+
+              <div class="loading"></div>
+              <div class="error-message"></div>
+              <div class="sent-message">Sua mensagem foi enviada com suceso. Obrigado!</div>
+
+              <div class="form-send">
+                <button type="submit" class="btn btn-large">Enviar Mensagem</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  </body>
+</html>

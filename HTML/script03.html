@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> Cadastro de Alunos </title>
+<script>
+function verificar(){
+var nome=frmalunos.txtnome.value;
+var senha=frmalunos.txtsenha.value;
+var senha1=frmalunos.txtsenha1.value;
+if(nome=="")
+	alert("Preencha o campo nome, campo obrigatorio");
+if(senha!=senha1)
+	alert("Favor preencher a senha de forma correta");
+	
+
+}
+</script>
+
+</head>
+<body>
+<form name=frmalunos action="#" method="post">
+<fieldset>
+<legend>Dados Cadastrais</legend>
+<br>
+<label> Nome </label>
+<input type="text" name=txtnome size=40 maxlength=40>
+<br>
+<label> Senha </label>
+<input type="password" name=txtsenha maxlength=10>
+<label> Redigite a Senha <label>
+<input type="password" name=txtsenha1 size=10>
+<br><br>
+<input type="button" value="Enviar" onclick="verificar()">
+</body>
+<label> Disciplina</label>
+<select name=txtdisci>
+<option value="PW"> PW </option>
+<option value="Optativa"> Optativa </option>
+<option value="TCC"> TCC </option>
+<option value="Redes"> Redes </option>
+<br>
+
+</html>
